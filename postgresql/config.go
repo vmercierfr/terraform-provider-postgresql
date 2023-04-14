@@ -40,6 +40,7 @@ const (
 	featurePubWithoutTruncate
 	featureFunction
 	featureServer
+	featureComment
 )
 
 var (
@@ -109,6 +110,9 @@ var (
 		featureFunction: semver.MustParseRange(">=8.4.0"),
 		// CREATE SERVER support
 		featureServer: semver.MustParseRange(">=10.0.0"),
+
+		// Comment support
+		featureComment: semver.MustParseRange(">=9.3.0"),
 	}
 )
 
