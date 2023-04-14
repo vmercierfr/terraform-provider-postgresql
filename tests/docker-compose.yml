@@ -10,6 +10,8 @@ services:
           - "wal_level=logical"
           - "-c"
           - "max_replication_slots=10"
+          - "-c"
+          - "log_statement=all"
         environment:
             POSTGRES_PASSWORD: ${PGPASSWORD}
         ports:
